@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Provides wrappers for executing external processes, capturing their stdout, and automatically checking their exit code.</Description>
+    <VersionPrefix>1.0.1.11</VersionPrefix>
+    <Authors>Andrea Martinelli</Authors>
+    <TargetFrameworks>net40;netstandard2.0</TargetFrameworks>
+    <AssemblyName>Shaman.ProcessUtils</AssemblyName>
+    <AssemblyOriginatorKeyFile>ShamanOpenSourceKey.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+    <PackageId>Shaman.ProcessUtils</PackageId>
+    <PackageTags>process;stdio;stdout</PackageTags>
+    <PackageIconUrl>http://shaman.io/images/shaman-nuget-icon.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/antiufo/Shaman.ProcessUtils</PackageProjectUrl>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net40' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+  </ItemGroup>
+</Project>
